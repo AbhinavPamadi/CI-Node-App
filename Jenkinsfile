@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Run Tests') {
             steps {
-                bat 'npm test.js'
+                bat 'npm test'
             }
         }
     }
