@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/AbhinavPamadi/CI-Node-App.git'
+                 git branch: 'main', url: 'https://github.com/AbhinavPamadi/CI-Node-App.git'
             }
         }
         stage('Install Dependencies') {
